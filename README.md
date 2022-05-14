@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+> ## 소개
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+리액트에서 작성한 코드의 템플릿을 저장하는 공간입니다.
 
-## Available Scripts
+<br />
 
-In the project directory, you can run:
+> ## 필요 라이브러리
+style 적용을 위해 styled-components가 필요합니다.
 
-### `npm start`
+```
+npm install styled-components
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br />
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> ## 구성
 
-### `npm test`
+<details>
+<summary> On / Off형 토글 스위치</summary>
+<div markdown="1">
+  
+- 목표  
+  
+  - 기존에는 input의 checkedbox 속성으로 on, off 표시
+  - 기존 방식은 다소 투박하게 느껴져, On / Off 스위치 방식으로 바꿔보고자 함.  
+  
+- 구현방법  
+  
+  - useState를 통해 클릭 여부에 따른 boolean형태의 상태값 저장
+  - before 가상 선택자 이용
+  - styled-components의 props 기능을 이용해 상태값에 따라 transform 속성 값 바꾸기
+  
+- 구현  
+  
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/79782594/168438894-3894233f-1174-4271-a02e-ebd04cfb543c.gif)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</div>
+</details>
