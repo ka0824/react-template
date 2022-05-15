@@ -5,10 +5,12 @@
 <br />
 
 > ## 필요 라이브러리
-style 적용을 위해 styled-components가 필요합니다.
+style 적용을 위해 styled-components가 필요합니다.  
+icon 적용을 위해 react-icons가 필요합니다.
 
 ```
 npm install styled-components
+npm install react-icons --save
 ```
 
 <br />
@@ -58,6 +60,31 @@ npm install styled-components
 - 구현  
   
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/79782594/168454555-ca56bdb3-6db1-4804-a507-66810eea0676.gif)
+
+
+
+</div>
+</details>
+
+<br />
+
+<details>
+<summary> Select 박스 </summary>
+<div markdown="1">
+  
+- 목표  
+  
+  - 기존 셀렉트 태그를 CSS로 수정하기에는 어려움이 느껴져 해당 기능을 하는 컴포넌트를 직접 구현해서 이후 디자인 수정을 용이하게 한다.
+  
+- 구현방법  
+  
+  - useState를 통해 클릭 여부, 선택된 option 값을 상태 값으로 저장한다.
+  - 클릭 여부는 선택 가능한 요소들을 보여주는 박스를 보여 줄 지를 결정한다.
+  - 선택된 option 값을 동기화하여 현재 어떤 값이 선택됐는 지에 따라 보여지는 값을 변화시킨다.
+  
+- 구현  
+  
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/79782594/168456151-95f111da-1b35-453b-a43b-e7b0aa499fa9.gif)
 
 
 
