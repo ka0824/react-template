@@ -1,11 +1,15 @@
 import styled from "styled-components";
 import ToggleOnOff from "./components/ToggleOnOff";
+import ToggleList from "./components/ToggleList";
 
 const App = () => {
   return (
     <Wrapper className="App">
       <ComponentWrapper>
         <ToggleOnOff></ToggleOnOff>
+      </ComponentWrapper>
+      <ComponentWrapper>
+        <ToggleList></ToggleList>
       </ComponentWrapper>
     </Wrapper>
   );
