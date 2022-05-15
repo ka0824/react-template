@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import ToggleOnOff from "./components/ToggleOnOff";
 import ToggleList from "./components/ToggleList";
+import Select from "./components/Select";
+import dataSelectOps from "./fakeData/dataSelectOps";
 
 const App = () => {
   return (
@@ -10,6 +12,9 @@ const App = () => {
       </ComponentWrapper>
       <ComponentWrapper>
         <ToggleList></ToggleList>
+      </ComponentWrapper>
+      <ComponentWrapper>
+        <Select list={dataSelectOps}></Select>
       </ComponentWrapper>
     </Wrapper>
   );
